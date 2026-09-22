@@ -3,8 +3,7 @@ export default function TokenDataPage() {
     <div className="mx-auto max-w-3xl px-6 py-10">
       <h1 className="text-2xl font-semibold">Token Data</h1>
       <p className="mt-2 text-sm text-neutral-500">
-        Coming soon: token info, balances and metrics powered by the SQD
-        indexer (Part 2).
+        Partie 2
       </p>
     </div>
   );

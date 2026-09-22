@@ -10,18 +10,21 @@ const NAV_LINKS = [
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-20 border-b border-neutral-200 bg-white">
+    <header className="sticky top-0 z-20 border-b border-primary/10 bg-background/80 backdrop-blur-md">
       <div className="flex items-center justify-between px-6 py-3">
         <div className="flex items-center gap-6">
-          <Link href="/" className="font-semibold">
+          <Link
+            href="/"
+            className="bg-gradient-to-r from-primary to-accent bg-clip-text text-lg font-bold text-transparent"
+          >
             Web3 Dapp
           </Link>
-          <nav className="flex gap-4 text-sm text-neutral-600">
+          <nav className="flex gap-4 text-sm text-foreground/60">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="hover:text-black"
+                className="transition-colors hover:text-primary"
               >
                 {link.label}
               </Link>
